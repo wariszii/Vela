@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Vela Shops</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 500px;
+  top: 50px;
+  bottom: 0;
+  height: inherit;
+}
+
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+    <body class="w3-content" style="max-width:1550px">
+        <style>
+            body {
+              background-color: #FFFAFA;
+            }
+   </style>
+  
+<!-- Navbar -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse " style="z-index:3;width:250px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+      <div class="w3-right"><img src="pro/lo.png" alt="logos" style="width:40%">
+    </div>
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a class="w3-bar-item w3-button w3-hover-black" href="catalog.html">หมวดหมู่ทั้งหมด</a> 
+    <a class="w3-bar-item w3-button w3-hover-black" href="index2.html">เสื้อผ้าเฟชั่น</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="index3.html">กระเป๋า</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="index4.html">รองเท้า</a>
+    </div>
+  </nav>
+
+  <!-- Top header -->
+    <style>
+* {box-sizing: border-box;}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #D3D3D3;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D3D3D3;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #D3D3D3;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 3px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #D3D3D3;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="home.html">Home</a>
+ 
+    <a href="#footer">Contact</a>
+    <div class="search-container">
+        <form action="cart.html">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-shopping-cart w3-margin-right" href="cart.html"></i></button>
+            <button type="submit"><i class="fa fa-search"></i></button> 
+          </form>
+    </div>
+  </div>
+    </header>
+       <style>
+        /* Popup container - can be anything you want */
+        .popup {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        
+        /* The actual popup */
+        .popup .popuptext {
+          visibility: hidden;
+          width: 200px;
+          background-color: #555;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 8px 0;
+          position: absolute;
+          z-index: 1;
+          bottom: 125%;
+          left: 50%;
+          margin-left: -80px;
+        }
+        
+        /* Popup arrow */
+        .popup .popuptext::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: #555 transparent transparent transparent;
+        }
+        
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+          visibility: visible;
+          -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+        }
+        
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+          from {opacity: 0;} 
+          to {opacity: 1;}
+        }
+        
+        @keyframes fadeIn {
+          from {opacity: 0;}
+          to {opacity:1 ;}
+        }
+        </style>
+        </head>
+        <body style="text-align:center">
+        
+  
+  <div class="w3-main" style="margin-left:250px">
+  <div class="w3-container w3-text" id="jeans">
+    <p><h4><b>รายละเอียดสินค้า</b></h4<></p>
+  </div>
+  <div class="w3-row">
+    <div class="w3-col s6 w3-center w3-container ">
+      <img src="pro/vemar.jpg" style="width:100%"></div>
+    <div class="w3-col s6 w3-center"><p><h4><b>กระเป๋าคาดเอว ผู้หญิง Vemar</b></h4></p></div>
+    <P>กระเป๋าคาดเอว/สะพายข้างหนังวัวเทียม ด้วยความออกแบบลายเส้นสไตล์V ผสมกับหนังวัวเทียม มอบความหรูหรา แต่ก็ยังคงความอินเทรนด์อยู่ในตัว  </P>
+    <p>สี : ดำ แดง</p>
+    <p>ขนาด : กว้าง 20 ซม. หนา 5 ซม. สูง 11 ซม.</p>
+    <p>ความยาวกระเป๋า : 110-121 ซม.</p>
+    <p>ความยาวสายคาดเอว : 119 ซม.</p>
+    <p>น้ำหนัก : 350 กรัม</p>
+    <p><h3><b>ราคา:1,990฿</b></h3></p>
+    <form action="/action_page.php">
+      <label for="quantity">จำนวน:</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="100">  
+    </form>
+    
+    <div class="w3-col s6  w3-center">
+     <div class="popup" onclick="myFunction()"><button class="w3-btn  w3-border w3-round-large w3-red">เพิ่มไปยังรถเข็น<i class="fa fa-shopping-cart"></i>
+       <span class="popuptext" id="myPopup">คุณได้เพิ่มสินค้าไปยังรถเข็นแล้ว</span>
+      </div>
+    </div>
+  </div>
+  
+ <!-- Footer -->
+ <footer class="w3-padding-64 w3-light-grey w3-small w3-center " id="footer">
+  <div class="w3-row-padding">
+    <div class="w3-col s4">
+      <h4>เกี่ยวกับเรา</h4>
+      <p><i class="fa fa-fw fa-map-marker"></i>VelaShop</p>
+      <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+      <p><i class="fa fa-fw fa-envelope"></i>Velashop@hotmail.com</p>
+    </div>
+
+    <div class="w3-col s4">
+      <h4>ช่องทางการติดต่อ</h4>
+      <p><i class="fa fa-facebook-official w3-hover-opacity w3-large"></i> VelaShop Thailand</p>
+      <p><i class="fa fa-instagram w3-hover-opacity w3-large"></i> VelaShop Thailand</p>
+      <p><i class="fa fa-twitter w3-hover-opacity w3-large"></i> VelaShop Thailand</p>
+    </div>
+
+    
+    <div class="w3-col s4 w3-justify">
+      <h4>วิธีการชำระเงิน</h4>
+      <p><i class="fa fa-fw 	fa fa-bank"></i>ธนาคารกสิกรไทย 090909090909</p>
+      <p><i class="fa fa-fw 	fa fa-bank"></i> ธนาคารไทยพานิช 090909090909</p>
+      <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+      <h4>บริการส่ง</h4>
+      <p><i class="fa fa-fw	fa fa-truck"></i>Kerry</p>
+      <p><i class="fa fa-fw 	fa fa-truck"></i>EMS</p>
+      <br>
+    </div>
+  </div>
+</footer>
+  <div class="w3-black w3-center w3-padding-24">Thank you <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></div>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+ }
+</script>
+
+  
+</body>
+</html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Vela Shops</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 500px;
+  top: 50px;
+  bottom: 0;
+  height: inherit;
+}
+
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+    <body class="w3-content" style="max-width:1550px">
+        <style>
+            body {
+              background-color: #FFFAFA;
+            }
+   </style>
+  
+<!-- Navbar -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <div class="w3-right"><img src="pro/lo.png" alt="logos" style="width:40%">
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a class="w3-bar-item w3-button w3-hover-black" href="catalog.html">หมวดหมู่ทั้งหมด</a> 
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-black"id="myBtn">
+        กระเป๋า <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#กระเป๋าสตางค์" class="w3-bar-item w3-button w3-hover-black">กระเป๋าสตางค์</a>
+      <a href="#กระเป๋าเป้"class="w3-bar-item w3-button w3-hover-black">กระเป๋าเป้</a>
+      <a href="#กระเป๋าผ้า/สะพายข้าง" class="w3-bar-item w3-button w3-hover-black">กระเป๋าผ้า/สะพายข้าง</a>
+
+    </div>
+  </div>
+</nav>
+
+  <!-- Top header -->
+    <style>
+* {box-sizing: border-box;}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #D3D3D3;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D3D3D3;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #D3D3D3;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 3px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #D3D3D3;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="home.html">Home</a>
+    <a href="#footer">Contact</a>
+    <div class="search-container">
+        <form action="cart.html">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-shopping-cart w3-margin-right" href="cart.html"></i></button>
+            <button type="submit"><i class="fa fa-search"></i></button> 
+          </form>
+    </div>
+  </div>
+    </header>
+
+<div class="w3-main" style="margin-left:250px">
+          <!-- Automatic Slideshow Images -->
+          <div class="mySlides w3-display-container w3-center">
+            <img src="pro/bag1.jpg"style="width:100%;min-height:350px;max-height:600px;">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+              
+            </div>
+          </div>
+          <div class="mySlides w3-display-container w3-center">
+            <img src="pro/bag2.jpg"style="width:100%;min-height:350px;max-height:600px;">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                 
+            </div>
+          </div>
+          <div class="mySlides w3-display-container w3-center">
+            <img src="pro/bag3.jpg" style="width:100%;min-height:350px;max-height:600px;">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+          </div>
+        </div>
+        </body>
+        <p><div id="กระเป๋าสตางค์"></div><h4><b>กระเป๋าสตางค์</b></h4></p>
+    <!-- Product grid -->
+   <div class="w3-container w3-text" id="jeans">
+    <div class="w3-row w3-scale">
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="pro/bag23.jpg" style="width:100%">
+            <div class="w3-display-middle w3-display-hover">
+              <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+            </div>
+          </div>
+          <p>กระเป๋าสตางค์หนังวัวแท้<br><b>900฿</b></p>
+        </div>
+  
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/long.guy.wal.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+        </div>
+          <p>Guy Laroche กระเป๋าธนบัตรพับยาว รุ่น HOUSTON<br><b>1,650฿</b></p>
+        </div>
+      </div>
+  
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="pro/bag22.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft"></span>
+            <div class="w3-display-middle w3-display-hover">
+              <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+            </div>
+          </div>
+          <p> PIERRE CARDIN <br><b>1,050฿</b></p>
+        </div>
+  
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/coach.wal.jpg"style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+          </div>
+          <p>COACH MEDIUM CORNER ZIP WALLET<br><b>2,590฿</b></p>
+        </div>
+      </div>
+  
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/polo.wal.jpg"style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+          </div>
+          <p>Pacento กระเป๋าสตางค์ผู้ชาย<br><b>390฿</b></p>
+        </div>
+  
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="pro/mich.kors.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft"></span>
+            <div class="w3-display-middle w3-display-hover">
+              <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+            </div>
+          </div>
+          <p>Michael Michael Kors กระเป๋าธนบัตรพับยาว <br><b>2,490฿</b></p>
+        </div>
+      </div>
+  
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/herc.val.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+          </div>
+          <p>Herschel Supply <br><b>490฿</b></p>
+        </div>
+  
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/guess.val.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+          </div>
+          <p>GUESS กระเป๋าสตางค์ผู้หญิง VIOLET สีน้ำตาลอ่อน<br><b>890฿</b></p>
+        </div>
+      </div>
+    </div>
+    <p><div id="กระเป๋าเป้"></div><h4><b>กระเป๋าเป้</b></h4></p>
+    <div class="w3-row w3-scale">
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="pro/ane.baga.jpg" style="width:100%">
+            <div class="w3-display-middle w3-display-hover">
+              <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+            </div>
+          </div>
+          <p>Anello กันน้ำ <br><b>1,650฿</b></p>
+        </div>
+  
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/coach.bag.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+        </div>
+          <p>กระเป๋าเป้ผู้หญิง Medium Charlie Backpack<br><b>3,600฿</b></p>
+          
+        </div>
+      </div>
+  
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="pro/bab.bag.jpg" style="width:100%">
+            <div class="w3-display-middle w3-display-hover">
+              <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+            </div>
+          </div>
+          <p> BAPE กระเป๋าเป้ผู้ชาย<br><b>800฿</b></p>
+        </div>
+  
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/bag33.jpg"style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+          </div>
+          <p>กระเป๋าเป้ผู้หญิง SEVENTEEN LONDON <br><b>2,180฿</b></p>
+        </div>
+      </div>
+  
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/nike.bag.jpg"style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+          </div>
+          <p>Nike Elemental LBR <br><b>688฿</b></p>
+        </div>
+  
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="pro/herc.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft"></span>
+            <div class="w3-display-middle w3-display-hover">
+              <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+            </div>
+          </div>
+          <p>MICKEY GEO COLLECTION BY HERSCHEL<br><b>1,100฿</b></p>
+        </div>
+      </div>
+  
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/bag.fila.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+          </div>
+          <p>FILA กระเป๋าเป้สะพายหลัง<br><b>900฿</b></p>
+        </div>
+  
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/ko.bag.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+          </div>
+          <p>Korea Best Style ผ้ากันน้ำ<br><b>356฿</b></p>
+        </div>
+      </div>
+    </div>
+    <p><div id="กระเป๋าผ้า/สะพายข้าง"></div><h4><b>กระเป๋าผ้า/สะพายข้าง</b></h4></p>
+    <div class="w3-row w3-scale">
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="pro/uniqol.pop.jpg" style="width:100%">
+            <div class="w3-display-middle w3-display-hover">
+              <a class="w3-button w3-black"href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+            </div>
+          </div>
+          <p>กระเป๋าผ้า KAWS<br><b>590฿</b></p>
+        </div>
+  
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/dickie.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+        </div>
+          <p>กระเป๋าสะพายข้าง Dickies<br><b>890฿</b></p>
+          
+        </div>
+      </div>
+  
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="pro/ado.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft"></span>
+            <div class="w3-display-middle w3-display-hover">
+              <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+            </div>
+          </div>
+          <p> TRAINING ESSENTIALS<br><b>590฿</b></p>
+        </div>
+  
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/her.sideba.jpg"style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+          </div>
+          <p> Herschel Supply กระเป๋าสะพายข้าง<br><b>1,890฿</b></p>
+        </div>
+      </div>
+  
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/nike.a.jpg"style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+          </div>
+          <p>Nike กระเป๋าผ้าแคนวาส<br><b>1,090฿</b></p>
+        </div>
+  
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="pro/the.nort.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft"></span>
+            <div class="w3-display-middle w3-display-hover">
+              <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+            </div>
+          </div>
+          <p>THE NORTH FACE Convertible<br><b>1,490฿</b></p>
+        </div>
+      </div>
+  
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/bag5.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+          </div>
+          <p> กกระเป๋าผ้าคอตตอน<br><b>199฿</b></p>
+        </div>
+  
+        <div class="w3-container">
+          <div class="w3-display-container">
+          <img src="pro/romar.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <a class="w3-button w3-black" href="detail.html">Buy now <i class="fa fa-shopping-cart"></a></i></a>
+          </div>
+          </div>
+          <p>Romar Polo Plus กระเป๋าสะพายข้าง<br><b>299฿</b></p>
+        </div>
+      </div>
+    </div>
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center " id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>เกี่ยวกับเรา</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i>VelaShop</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i>Velashop@hotmail.com</p>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>ช่องทางการติดต่อ</h4>
+        <p><i class="fa fa-facebook-official w3-hover-opacity w3-large"></i> VelaShop Thailand</p>
+        <p><i class="fa fa-instagram w3-hover-opacity w3-large"></i> VelaShop Thailand</p>
+        <p><i class="fa fa-twitter w3-hover-opacity w3-large"></i> VelaShop Thailand</p>
+      </div>
+  
+      
+      <div class="w3-col s4 w3-justify">
+        <h4>วิธีการชำระเงิน</h4>
+        <p><i class="fa fa-fw 	fa fa-bank"></i>ธนาคารกสิกรไทย 090909090909</p>
+        <p><i class="fa fa-fw 	fa fa-bank"></i> ธนาคารไทยพานิช 090909090909</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <h4>บริการส่ง</h4>
+        <p><i class="fa fa-fw	fa fa-truck"></i>Kerry</p>
+        <p><i class="fa fa-fw 	fa fa-truck"></i>EMS</p>
+        <br>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Thank you <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></div>
+
+<script>
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  <script>
+    // Accordion 
+    function myAccFunc() {
+      var x = document.getElementById("demoAcc");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    
+    // Click on the "Jeans" link on page load to open the accordion for demo purposes
+    document.getElementById("myBtn").click();
+    
+    
+    // Open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+     
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+  
+  </body>
+  </html>
