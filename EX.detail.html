@@ -31,9 +31,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse " style="z-index:3;width:250px" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-      <div class="w3-right"><img src="pro/lo.png" alt="logos" style="width:40%">
+      <div class="w3-right"><img src="pro/lo.png" alt="logos" style="width:40%"> <!--โลโก้ร้านค้า -->
     </div>
-    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">  <!-- บาร์บอกแต่ละหมวดหมู่ -->
     <a class="w3-bar-item w3-button w3-hover-black" href="catalog.html">หมวดหมู่ทั้งหมด</a> 
     <a class="w3-bar-item w3-button w3-hover-black" href="index2.html">เสื้อผ้าเฟชั่น</a>
     <a class="w3-bar-item w3-button w3-hover-black" href="index3.html">กระเป๋า</a>
@@ -41,8 +41,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     </div>
   </nav>
 
- <!-- Top header -->
- <style>
+ <!-- Top header -->  <!-- style ของ topnav -->
+ <style>  
   * {box-sizing: border-box;}
   
   
@@ -67,7 +67,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   }
   
   .topnav a:hover {
-    background-color: black;
+    background-color: black; 
     color: white;
   }
   
@@ -121,15 +121,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   </style>
   </head>
 <body>
-  <div class="topnav">
+  <div class="topnav">   
     <a class="active" href="home.html">Home</a>
     <a class="active" href="catalog.html">Catalog</a>
     <a href="#footer">Contact</a>
     <div class="search-container">
-        <input type="text" placeholder="Search.." name="search">
-         <a href="cart.html" class="w3-hover w3-hide-small w3-right  w3-button"><i class="fa fa-shopping-cart"></i></a>
-         <a href="#" class=" w3-hover w3-hide-small w3-right  w3-button"><i class="fa fa-user"></i></a>
-         <a href="#" class=" w3-hover w3-hide-small w3-right w3-button"><i class="fa fa-search"></i></a>
+        <input type="text" placeholder="Search.." name="search"> 
+         <a href="cart.html" class="w3-hover w3-hide-small w3-right  w3-button"><i class="fa fa-shopping-cart"></i></a>   <!-- icon รถเข็น -->
+         <a href="#" class=" w3-hover w3-hide-small w3-right  w3-button"><i class="fa fa-user"></i></a>  <!-- icon user -->
+         <a href="#" class=" w3-hover w3-hide-small w3-right w3-button"><i class="fa fa-search"></i></a>  <!-- icon search -->
     </div>
   </div>
     </header>
@@ -195,7 +195,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <body style="text-align:center">
         
   
-  <div class="w3-main" style="margin-left:250px">
+  <div class="w3-main" style="margin-left:250px">  <!-- รายละเอียดร้านค้า -->
   <div class="w3-container w3-text" id="jeans">
     <p><h4><b>รายละเอียดสินค้า</b></h4<></p>
   </div>
@@ -217,7 +217,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     
     <div class="w3-col s6  w3-center">
      <div class="popup" onclick="myFunction()"><button class="w3-btn  w3-border w3-round-large w3-red">เพิ่มไปยังรถเข็น<i class="fa fa-shopping-cart"></i>
-       <span class="popuptext" id="myPopup">คุณได้เพิ่มสินค้าไปยังรถเข็นแล้ว</span>
+       <span class="popuptext" id="myPopup">คุณได้เพิ่มสินค้าไปยังรถเข็นแล้ว</span>  <!-- ปุ่มเพิ่มรถเข็น popup -->
       </div>
     </div>
   </div>
